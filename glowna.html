@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deng.pl</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<style type="text/css">
+
+#tekst {
+	font-size: 18pt;
+	font-family: consolas;
+	text-align: center;
+	background-color: gray;
+	}
+	
+#napis2 {
+	position: relative;
+	background-color: black;
+	text-align: center;
+	width: 350px;
+	height: 30px;
+	float: top;
+	font-size: 15pt;
+	font-family: impact;
+	color: orange;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+</style>
+<ul>
+  <li><a class="dengpl" href="glowna.html">DENG.PL</a></li>
+  <li><a href="#credit">Social Credit Test</a></li>
+  <li><a href="#rejestr">Rejestracja</a></li>
+  <li style="float:right"><a class="troll" href="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png">???</a></li>
+</ul>
+<p><input type="button" value="NIE KLIKAJ" onmouseover=('Dis'); onclick="alert('Powiedziałem NIE KLIKAJ.');"/>
+<input type="button" id="klik" value="Twórcy Projektu"/></p>
+<script>
+
+	function animacja()
+	{
+	var blok = document.getElementById('napis2');
+	if (parseInt(blok.style.left) < 50)
+	{
+	blok.style.left="500px";
+	}
+	else
+	{
+	blok.style.left = (parseInt(blok.style.left) - 3) + "px";
+	}	
+}
+	window.setInterval(animacja, 60);
+
+	function pisz()
+	{
+		alert('Michał Kanios, Adrian Kisielewski, Franciszek Knap');
+	}
+	document.getElementById ("klik").onclick = pisz;
+
+	function ik2()
+	{
+	document.getElementById('ikona').src
+	}
+
+	var czas = 200;
+	var znak_p = 1;
+	function przewin()
+	{
+	window.setTimeout(przewin, czas);
+	var nap = document.napis.text.value;
+	document.napis.text.value = nap.substring(znak_p)
+	+ nap.substring(0, znak_p);
+	}
+	przewin()
+</script>
+<div id="napis2" style="left: 500px;">GORĄCE REFORMY W TWOJEJ OKOLICY!!!</div>
+<div id="dis_napis">
+<form name = "napis">
+	<input id="tekst" name="text" size=60 value="	Polskie forum Dengistów!.	Zapraszamy na DENG.PL 	">
+</form>
+</div>
+<div>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/tXCbRloR7oU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/FhHeGZoWl0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/_CQ_ehoRfsE?start=19130" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/SChnJDfmrSU?start=19130" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/NQLvPfFJ_JA?start=172" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/ZYAPgPH9hsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/Jrg9KxGNeJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/IIJM3S9H5m0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div>
+  <div style="float:left">
+    <h1>Wielcy Dengiści</h1>
+<p>
+<a href="https://www.youtube.com/watch?v=KQwR_UXMiFE" onmouseover='zmiana.src="lew.jpg"'
+onmouseout='zmiana.src="fat_speer.jpg"' onmousedown='zmiana.src="speerek.jpg"'>
+<img src="speerer.png" name="zmiana" border="4" width="120" height="120"></a>
+Albert Speer
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=f_6AQA4uzD0" onmouseover='zmiana2.src="lew.jpg"'
+onmouseout='zmiana2.src="king_charles_spaniel.jpg"' onmousedown='zmiana2.src="speerek.jpg"'>
+<img src="bismarck.jpg" name="zmiana2" border="4" width="120" height="120"></a>
+Otto von Bismarck
+</p>
+
+<p>
+<a href="https://www.youtube.com/c/RobertMak%C5%82owicz_official" onmouseover='zmiana3.src="lew.jpg"'
+onmouseout='zmiana3.src="maklo.jpg"' onmousedown='zmiana3.src="speerek.jpg"'>
+<img src="maklo.jpg" name="zmiana3" border="4" width="120" height="120"></a>
+Robert Makłowicz
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=Ul1JM6CajeQ" onmouseover='zmiana4.src="lew.jpg"'
+onmouseout='zmiana4.src="sussydeng.jpg"' onmousedown='zmiana4.src="speerek.jpg"'>
+<img src="sussydeng.jpg" name="zmiana4" border="4" width="120" height="120"></a>
+Deng Xiaoping
+</p>
+  </div>
+  <div style="float:right">
+    <h1>Dengiści Juniorzy</h1>
+<p>
+<a href="https://www.youtube.com/watch?v=HpaCjgJWVJU&ab_channel=TIKhistory" onmouseover='a1.src="lew.jpg"'
+onmouseout='a1.src="canaris.jpg"'>
+<img src="canaris.jpg" name="a1" border="4" width="120" height="120"></a>
+Wilhelm Canaris
+</p>
+
+<p>
+<a href="https://mightandmagic.fandom.com/wiki/Raelag" onmouseover='a2.src="lew.jpg"'
+onmouseout='a2.src="agrael.png"'>
+<img src="agrael.png" name="a2" border="4" width="120" height="120"></a>
+Agrael
+</p>
+
+<p>
+<a href="https://www.youtube.com/c/RobertMak%C5%82owicz_official" onmouseover='a3.src="lew.jpg"'
+onmouseout='a3.src="garchomp.jpg"'>
+<img src="garchomp.jpg" name="a3" border="4" width="120" height="120"></a>
+Garchomp
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=Ul1JM6CajeQ" onmouseover='a4.src="lew.jpg"'
+onmouseout='a4.src="napoleon.jpg"'>
+<img src="napoleon.jpg" name="a4" border="4" width="120" height="120"></a>
+Napoleon Bonaparte
+</p>
+  </div>
+  <div style="float:center:">
+	<h1>SPOT REKLAMOWY</h1>
+	<p>
+	<img src="pawelek1.png" name="pawelek1" border="4" width="360" height="215">
+	<img src="pawelek2.jpeg" name="pawelek2" border="4" width="215" height="215">
+	</p>
+</div>
+
+<style>
+	#copyright {
+	background-image: url('bg.png');
+	font-size: 15pt;
+	color: white;
+	text-align: center;
+	text-shadow: -1px -1px 0 black, 3px -1px 0 black, -1px 3px 0 black, 3px 3px 0 #000;
+	}
+
+	.dengpl {
+	background-color: red;
+	}
+	
+	h1 {
+	position: relative;
+	color: white;
+	font-family: impact;
+	text-decoration-line: overline;
+	text-decoration-color: red;
+	text-shadow: -1px -1px 0 red, 6px -1px 0 red, -1px 6px 0 red, 6px 6px 0 #000;
+	}
+	
+	a {
+	position: relative;
+	color: white;
+	font-size: 35pt;
+	font-family: impact;
+	text-decoration-color: black;
+	text-shadow: -1px -1px 0 black, 3px -1px 0 black, -1px 3px 0 black, 3px 3px 0 #000;
+	}
+	
+	body {
+	background-image: url('bg2.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+	
+	p {
+	font-size: 20pt;
+	color: white;
+	font-family: impact;
+	text-decoration-color: red;
+	text-shadow: -1px -1px 0 purple, 3px -1px 0 purple, -1px 3px 0 purple, 3px 3px 0 #000;
+	}
+</style>
+</body>
+<footer>
+		<p id="copyright">
+			Copyright - Mkanios corp. 2022 -
+			Pracownicy spółki Mkanios corp.:
+			Michał Kanios,
+			Adrian Kisielewski,
+			Franciszek Knap,
+			Jakub Arkadiusz Pawłowski (nie istnieje)
+		</p>
+</footer>
