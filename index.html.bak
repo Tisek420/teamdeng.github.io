@@ -54,7 +54,7 @@ li a:hover {
 <ul>
   <li><a class="dengpl" href="index.html">DENG.PL</a></li>
   <li><a href="sc test.html">Social Credit Test</a></li>
-  <li><a href="rejestr.html">Rejestracja</a></li>
+  <li><a href="#rejestr">Rejestracja</a></li>
   <li style="float:right"><a class="troll" href="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png">???</a></li>
 </ul>
 <p><input type="button" value="NIE KLIKAJ" onmouseover=('Dis'); onclick="alert('Powiedziałem NIE KLIKAJ.');"/>

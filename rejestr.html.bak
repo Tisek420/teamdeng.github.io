@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Socjalny Kredytowany</title>
+<meta charset="UTF-8">
+
+<style type="text/css">
+	
+	
+	div
+	{
+	width:420px;
+	background-color: #ccccff;
+	
+	padding:10px;
+	}
+	
+	.pole
+	{
+	position:absolute;
+	left:110px;
+	}
+	
+	#ak1
+	{
+	font-size:14px;
+	}
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+		}
+		li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+	</style>
+	
+	<script>
+	function Sprawdz(){
+            var form = document.getElementById('form'),
+            wzory = {
+                'imie' : /^[a-zA-Z]{2,}$/i,
+                'nazw' :/^[a-zA-Z]{2,}$/i,
+                'pesel' : /^[0-9]{11}$/i,
+                'emil' : /^[0-9az-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$/i, 
+            }
+            if(document.getElementById('imie').value == '')
+            {
+                alert('Przed wyruszeniem w droge uzupełnij imie');
+                form.imie.focus();
+                return false;
+            }
+            if(document.getElementById('nazw').value == '')
+            {
+                alert('Przed wyruszeniem w droge uzupełnij nazwisko');
+                form.nazw.focus();
+                return false;
+            }
+            if(document.getElementById('pesel').value == '')
+            {
+                alert('Przed wyruszeniem w droge uzupełnij pesel');
+                form.pesel.focus();
+                return false;
+            }
+            if(document.getElementById('wiad').value == '')
+            {
+                alert('no a wiadomość??');
+                form.wiad.focus();
+                return false;
+            }
+            if(document.getElementById('emil').value == '')
+            {
+                alert('podaj emaila');
+                form.emil.focus();
+                return false;
+            }       
+            if (document.getElementById('imie').value.length < 3)
+            {
+                alert('Imie jakieś zagraniczne?');
+                form.imie.focus();
+                return false;
+            }
+            if (document.getElementById('nazw').value.length < 3)
+            {
+                alert('Niezpotykanie krótkie nazwisko');
+                form.nazw.focus();
+                return false;
+            }
+            if (document.getElementById('pesel').value.length !== 11)
+            {
+                alert('Polski pesel posiada 11 znaków');
+                form.pesel.focus();
+                return false;
+            }
+            
+            if (document.getElementById('emil').value.length < 8)
+            {
+                alert('e-mail niepoprawny');
+                form.emil.focus();
+                return false;
+            }
+            
+			
+			
+			
+            for(var pole in wzory)
+            {
+                if(form[pole])
+                {
+                    if(!wzory[pole].test(form[pole].value))
+                    {
+                        alert('Pole ' + pole + ' jest błednie podane ');
+                        return false;
+                    }
+                }
+            }
+            alert('Poprawność')
+            return true;
+        }
+		
+		
+	</script>
+	
+	
+	</head>
+	<ul>
+  <li><a class="dengpl" href="index.html">DENG.PL</a></li>
+  <li><a href="#credit">Social Credit Test</a></li>
+  <li><a href="#rejestr">Rejestracja</a></li>
+  <li style="float:right"><a class="troll" href="https://www.youtube.com/watch?v=Sag4AGymNr0">???</a></li>
+	</ul>
+	<body>
+		<div>
+			<form id="form" enctype="text/plain" action="" method="post" onsubmit='return Sprawdz();'>
+			<p id="ak1">Rejestr ludności denga:</p>
+			<b>Imie:</b>
+			<input class="pole" id="imie" name="imie" value="" size="40"><br>
+			
+			<b>Nazwisko:</b>
+			<input class="pole" id="nazw" name="nazw" value="" size="40"><br>
+			
+			
+			
+			<b>Pesel:</b>	
+			<input class="pole" id="pesel" name="pesel" value="" size="40"><br>
+			
+			<b>Email:</b>	
+			<input class="pole" id="emil" name="emil" value="" size="40"><br>
+			
+			<input type="submit" value="wyslij"></form>
+		</div>
+			
+	</body>
+	<style>
+	
+	#copyright {
+	background-image: url('bg.png');
+	font-size: 15pt;
+	color: white;
+	text-align: center;
+	text-shadow: -1px -1px 0 black, 3px -1px 0 black, -1px 3px 0 black, 3px 3px 0 #000;
+	}
+
+	.dengpl {
+	background-color: green;
+	}
+	
+	h1 {
+	position: relative;
+	color: white;
+	font-family: impact;
+	text-decoration-line: overline;
+	text-decoration-color: red;
+	text-shadow: -1px -1px 0 red, 6px -1px 0 red, -1px 6px 0 red, 6px 6px 0 #000;
+	}
+	
+	a {
+	position: relative;
+	color: white;
+	font-size: 35pt;
+	font-family: impact;
+	text-decoration-color: black;
+	text-shadow: -1px -1px 0 black, 3px -1px 0 black, -1px 3px 0 black, 3px 3px 0 #000;
+	}
+	
+	body {
+	background-image: ('redsun.png')
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+	}
+	
+	p {
+	font-size: 20pt;
+	color: white;
+	font-family: impact;
+	text-decoration-color: gray;
+	text-shadow: -1px -1px 0 purple, 3px -1px 0 purple, -1px 3px 0 purple, 3px 3px 0 #000;
+	}
+	
+	
+	
+	</style>
+	
+	<footer>
+		<p id="copyright">
+		<br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		
+			Copyright - Mkanios corp. 2022 -
+			Pracownicy spółki Mkanios corp.:
+			Michał Kanios,
+			Adrian Kisielewski,
+			Franciszek Knap,
+			Jakub Arkadiusz Pawłowski (nie istnieje)
+		</p>
+</footer>
+	
+</html>
+</head>
