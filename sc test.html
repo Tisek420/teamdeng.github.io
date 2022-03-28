@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+<title>Deng.pl | Social Credit test</title>
+</head>
+
+<body>
+	<style type="text/css">
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: gray;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover {
+	  background-color: #111;
+	}
+	#copyright {
+		background-image: url('bg.png');
+		font-size: 15pt;
+		color: white;
+		text-align: center;
+		text-shadow: -1px -1px 0 black, 3px -1px 0 black, -1px 3px 0 black, 3px 3px 0 #000;	
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding-bottom:10px;
+		}
+
+		.credit {
+		background-color: red;
+		}
+		
+		h1 {
+		position: relative;
+		color: white;
+		font-family: impact;
+		text-decoration-line: overline;
+		text-decoration-color: red;
+		text-shadow: -1px -1px 0 red, 6px -1px 0 red, -1px 6px 0 red, 6px 6px 0 #000;
+		}
+		
+		a {
+		position: relative;
+		color: white;
+		font-size: 35pt;
+		font-family: impact;
+		text-decoration-color: black;
+		text-shadow: -1px -1px 0 black, 3px -1px 0 black, -1px 3px 0 black, 3px 3px 0 #000;
+		}
+		
+		body {
+		background-image: url('zedonge.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		}
+		
+		p {
+		font-size: 20pt;
+		color: white;
+		font-family: impact;
+		text-decoration-color: red;
+		text-shadow: -1px -1px 0 purple, 3px -1px 0 purple, -1px 3px 0 purple, 3px 3px 0 #000;
+		}
+		
+		
+		.button-4 {
+		z-index: 10;
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 360px 790px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+}
+
+.q1{
+background-color:grey;
+height:550px;
+position:relative;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+width:400px;
+font-family: arial;
+border: 1px solid black;
+}
+.q2{
+background-color:grey;
+height:550px;
+position:relative;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+width:400px;
+font-family: arial;
+border: 1px solid black;
+}
+.q3{
+background-color:grey;
+height:550px;
+position:relative;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+width:400px;
+font-family: arial;
+border: 1px solid black;
+}
+.q4{
+background-color:grey;
+height:650px;
+position:relative;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+width:400px;
+font-family: arial;
+border: 1px solid black;
+}
+.counter
+{
+z-index: 9;
+text-align: right;
+position:fixed;
+background-color: white;
+border: 2px solid black;
+}
+body, html {
+  height: 100%;
+}
+
+	</style>
+	
+	
+	
+	<ul>
+	  <li><a class="dengpl" href="index.html">DENG.PL</a></li>
+	  <li><a class="credit" href="#credit">Social Credit Test</a></li>
+	  <li><a href="#rejestr">Rejestracja</a></li>
+	  <li style="float:right"><a class="troll" href="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png">???</a></li>
+	</ul>
+
+	<button id="btn" class="button-4" role="button" onclick="start()"  button.style.visibility = "hidden" >Kliknij by zacząć test</button>
+
+	<div class="test">
+	
+		<div class="q1">
+		<img src="xi the pooh.jpg" width="270px" height="330px">
+		<p>1.Co uważasz o tym zdjęciu?</p>
+		<form>
+			<input type="radio" id="html" name="fav_language" onclick="plus()" value="corec">
+			<label for="html">Okropne</label><br>
+			<input type="radio" id="css" name="fav_language" onclick="minus()" value="wron">
+			<label for="css">Zabawne</label><br>
+			<input type="radio" id="javascript" name="fav_language" onclick="minus()" value="wron">
+			<label for="javascript">Prawdziwe</label><br>
+			<input type="radio" id="ddos" name="fav_language" onclick="minus()" value="wron">
+			<label for="ddos">Xi Jinping głupi</label>
+		</form>
+		</div>
+		
+		
+		<div class="q2">
+		<img src="1989.png" width="270px" height="330px">
+				<p>2.Czy wiesz co to jest?</p>
+		<form>
+			<input type="radio" id="html" name="fav_language" onclick="minus()" value="wron">
+			<label for="html">To wydarzenia z placu niebiańskiego z roku 1989</label><br>
+			<input type="radio" id="css" name="fav_language" onclick="plus()" value="corec">
+			<label for="css">Photoshop, nigdy niczego takiego nie było nigdy</label><br>
+			<input type="radio" id="javascript" name="fav_language" onclick="minus()" value="wron">
+			<label for="javascript">To przez tego barana Denga Xiaopinga tak było</label><br>
+			<input type="radio" id="ddos" name="fav_language" onclick="plus()" value="corec">
+			<label for="ddos">Perspektywa, to tylko tak wygląda, nic tam nie było</label>
+		</form>
+		</div>
+		
+		
+		<div class="q3">
+		<img src="taiwan.png" width="270px" height="330px">
+		<p>3.Czym według ciebie jest ta wyspa??</p>
+		<form>
+			<input type="radio" id="html" name="fav_language" onclick="minus()" value="wron">
+			<label for="html">Niezależne państwo Tajwan</label><br>
+			<input type="radio" id="css" name="fav_language" onclick="minus()" value="wron">
+			<label for="css">Śmieszna wysepka której chinole pobić nie mogą</label><br>
+			<input type="radio" id="javascript" name="fav_language" onclick="plus()" value="corec">
+			<label for="javascript">To integralna część wielkich chin</label><br>
+			<input type="radio" id="ddos" name="fav_language" onclick="minus()" value="wron">
+			<label for="ddos">Tajwan, coś czego chińczycy nie mają</label>
+		</form>
+		</div>
+		
+		
+		
+		<div class="q4">
+		<img src="xina.png" width="270px" height="330px">
+		<p>4.Czy miałbyś cokolwiek przeciwko wykorzystaniu twojej miejscowości jako pole testowe dla pocisków nuklearnych?</p>
+		<form>
+			<input type="radio" id="html" name="fav_language" onclick="minus()" value="wron">
+			<label for="html">Tak</label><br>
+			<input type="radio" id="css" name="fav_language" onclick="plus()" value="corec">
+			<label for="css">Nie, chwała CCP!</label><br>
+		</form>
+		<br>
+		<button onclick="wynik()">Wynik</button>
+		</div>
+	
+	</div>
+
+	
+
+
+
+
+	
+
+
+	<script>
+		var hanji = new Audio('hanji.mp3');
+		var aah = new Audio('aah.mp3');
+		var angry = new Audio('angry.mp3');
+		var yelling = new Audio('yelling.mp3');
+		var redsun = new Audio('redsun.mp3');
+		var cena = new Audio('cena.mp3');
+		
+		function start()
+		{
+		hanji.play();
+		document.getElementById('btn').style.visibility = 'hidden';
+		}
+		var sc = 0;
+		function plus()
+		{
+		sc = sc + 15;
+		}
+		function minus()
+		{
+		sc = sc - 999;
+		}
+		function wynik()
+		{
+			if(sc<0)
+			{
+			hanji.pause();
+			angry.play();
+			aah.play();
+			yelling.play();
+			alert(sc + " " + "punktów -" + " " + "data twojej egzekucji: teraz");
+			}
+			else
+			{
+			redsun.play();
+			cena.play();
+			hanji.pause();
+			
+			alert(sc + " " + "punktów -" + " " + "dziękujemy za bycie przykładnym obywatelem! Chwała CCP!");
+			}
+		
+		}
+	</script>
+
+
+	
+	
+	
+</body>
+
+<footer>
+		<p id="copyright">
+			Copyright - Mkanios corp. 2022 -
+			Pracownicy spółki Mkanios corp.:
+			Michał Kanios,
+			Adrian Kisielewski,
+			Franciszek Knap,
+			Jakub Arkadiusz Pawłowski (nie istnieje)
+		</p>
+</footer>
